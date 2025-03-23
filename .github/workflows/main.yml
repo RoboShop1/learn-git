@@ -10,6 +10,12 @@ jobs:
       - name: code-checkout
         uses: actions/checkout@v4
 
+      - name: print
+        run:
+          echo "$name"
+        env:
+          name: ${{ toJSON(github) }}
+
       - name: see content
         run: |
           ls -l 
