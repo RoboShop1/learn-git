@@ -17,7 +17,7 @@ jobs:
         run:
           echo "$name"
         env:
-          name: ${{ toJSON(github) }
+          name: ${{ toJSON(github) }}
 
       - name: sleep 40
         run: sleep 40
