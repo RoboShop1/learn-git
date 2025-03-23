@@ -1,7 +1,6 @@
 This is files-1
 This is files-2
 This is files-2
-Myfile line-1
-Myfile line-2
-Myfile line-5
-Myfile line-7
+THis is super-5
+THis is super-6
+THis is super-7
