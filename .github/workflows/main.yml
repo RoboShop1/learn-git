@@ -1,0 +1,21 @@
+name: main-ci
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: code-checkout
+        uses: actions/checkout@v4
+
+      - name: print
+        run:
+          echo "$name"
+        env:
+          name: ${{ toJSON(github) }}
+
+      - name: see content
+        run: |
+          ls -l
