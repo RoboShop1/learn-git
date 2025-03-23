@@ -12,4 +12,5 @@ jobs:
 
       - name: see content
         run: |
-          ls -l
+          ls -l 
+          exit 1
