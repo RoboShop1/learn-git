@@ -1,6 +1,7 @@
 name: concurrency
 on:
   push:
+    branches:
     - main
 concurrency:
   group: one
