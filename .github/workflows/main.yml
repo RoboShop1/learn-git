@@ -10,10 +10,6 @@ jobs:
       - name: code-checkout
         uses: actions/checkout@v4
 
-      - name: sleep
-        run: |
-          sleep 100s
-
       - name: print
         run:
           echo "$name"
@@ -22,4 +18,4 @@ jobs:
 
       - name: see content
         run: |
-          ls -l
+          ls -l && exit 1
