@@ -1,0 +1,9 @@
+name: Diff
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ci:
+    uses:
